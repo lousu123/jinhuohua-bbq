@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金火花烤串 · 全案运营方案</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+       background:#F3EFE8;color:#231C15;line-height:1.74;font-size:15px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:520px;margin:0 auto;background:#F3EFE8;min-height:100vh;}
+
+  .hero{background:linear-gradient(160deg,#17110C 0%,#2B1A10 55%,#43230F 100%);
+        padding:36px 24px 32px;color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;bottom:-80px;width:240px;height:240px;
+        border-radius:50%;background:radial-gradient(circle,rgba(255,130,45,.3),transparent 70%);}
+  .hero .tag{display:inline-block;font-size:11px;letter-spacing:1px;color:#FFAE72;
+        border:1px solid rgba(255,174,114,.42);padding:3px 10px;border-radius:20px;margin-bottom:14px;}
+  .hero h1{font-size:26px;font-weight:800;letter-spacing:.8px;line-height:1.35;}
+  .hero h1 em{font-style:normal;color:#FFB870;}
+  .hero p{font-size:13px;color:#B5A296;margin-top:11px;line-height:1.72;}
+  .hero .kpi{display:flex;gap:9px;margin-top:18px;position:relative;z-index:2;}
+  .hero .kpi div{flex:1;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 6px;text-align:center;}
+  .hero .kpi b{display:block;font-size:15px;color:#FFB870;font-weight:800;}
+  .hero .kpi span{font-size:10px;color:#A08F82;}
+
+  .sec{padding:25px 18px 2px;}
+  .sec-h{display:flex;align-items:baseline;gap:8px;margin-bottom:13px;padding-left:2px;}
+  .sec-h .num{font-size:12px;font-weight:800;color:#fff;background:#D9521C;
+        border-radius:6px;padding:1px 7px;}
+  .sec-h h2{font-size:17px;font-weight:800;letter-spacing:.4px;}
+
+  .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(60,35,20,.06);
+        margin-bottom:14px;border:1px solid rgba(0,0,0,.03);}
+  .card .pad{padding:16px 16px 18px;}
+  .card h3{font-size:15px;font-weight:700;margin-bottom:4px;}
+  .card .sub{font-size:12px;color:#9C8A7C;margin-bottom:12px;}
+
+  .lead{font-size:13.5px;color:#43382F;margin-bottom:10px;}
+  .list{list-style:none;}
+  .list li{font-size:13.5px;color:#43382F;padding:7px 0 7px 17px;position:relative;
+        border-bottom:1px dashed #EFE7DF;}
+  .list li:last-child{border-bottom:none;}
+  .list li::before{content:"";position:absolute;left:3px;top:15px;width:5px;height:5px;
+        border-radius:50%;background:#D9521C;}
+  .list b{color:#231C15;}
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th{background:#FAF5F0;color:#8E7A6C;font-weight:700;font-size:11.5px;text-align:left;
+     padding:8px 6px;border-bottom:1px solid #EDE2D8;}
+  td{padding:9px 6px;border-bottom:1px solid #F3EBE3;vertical-align:top;color:#3C332C;}
+  tr:last-child td{border-bottom:none;}
+  td.hi{color:#C24312;font-weight:700;}
+
+  .quote{background:linear-gradient(135deg,#2B1A10,#43230F);border-radius:16px;
+        padding:21px 19px;color:#fff;margin-bottom:14px;}
+  .quote .small{font-size:11px;color:#FFAE72;letter-spacing:1.5px;margin-bottom:9px;}
+  .quote .big{font-size:18.5px;font-weight:800;line-height:1.55;}
+  .quote .big em{font-style:normal;color:#FFB870;}
+  .quote .note{font-size:12px;color:#B39980;margin-top:10px;line-height:1.65;}
+
+  .warn{background:#FFF5EC;border:1px solid #F6DCC4;border-radius:14px;padding:16px 16px 14px;margin-bottom:14px;}
+  .warn h3{font-size:14px;font-weight:700;color:#A84E14;margin-bottom:10px;}
+  .warn ol{padding-left:18px;}
+  .warn li{font-size:13px;color:#5A4838;margin-bottom:9px;line-height:1.66;}
+  .warn li:last-child{margin-bottom:0;}
+  .warn b{color:#A84E14;}
+
+  .calc{background:#231A14;border-radius:16px;padding:17px 16px;color:#EDE2D8;margin-bottom:14px;}
+  .calc h3{font-size:14px;color:#FFB870;font-weight:700;margin-bottom:11px;}
+  .calc .row{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;
+        border-bottom:1px dashed rgba(255,255,255,.1);}
+  .calc .row:last-of-type{border-bottom:none;}
+  .calc .row span{color:#A6958A;}
+  .calc .row b{color:#fff;font-weight:700;}
+  .calc .note{font-size:11.5px;color:#8A7A6A;margin-top:11px;line-height:1.65;}
+
+  .foot{padding:22px 18px 36px;text-align:center;font-size:11px;color:#A2917F;line-height:1.9;}
+  .foot b{color:#7C6A5C;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="tag">塘沽 · 滨海名都 · 约 200㎡ · 人均 55–60</div>
+    <h1>金火花烤串<br><em>全案运营方案</em></h1>
+    <p>塘沽烤串这个市场，67 家里能叫上名字的倒闭店至少 8 家。<br>这一版只回答一个问题：凭什么你不是第 9 家。</p>
+    <div class="kpi">
+      <div><b>200㎡</b><span>中型店</span></div>
+      <div><b>55–60</b><span>目标人均</span></div>
+      <div><b>1 条活路</b><span>聚会场</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">00</span><h2>门店现状</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:70px;">项目</th><th>情况</th></tr>
+        <tr><td>店名</td><td><b>金火花烤串</b></td></tr>
+        <tr><td>品类</td><td>餐饮－烤串烤肉－烤串</td></tr>
+        <tr><td>位置</td><td>塘沽 · 滨海名都片区（滨海新区）</td></tr>
+        <tr><td>面积</td><td>约 200㎡（你提供）</td></tr>
+        <tr><td>目标人均</td><td>55–60 元（你提供）</td></tr>
+        <tr><td>状态</td><td>尚未开业 · 待签约 · 0 评价</td></tr>
+        <tr><td>桌数包间</td><td class="hi">系统未填，见文末待确认项</td></tr>
+      </table>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">01</span><h2>塘沽这个市场，先看清死法</h2></div>
+    <div class="card"><div class="pad">
+      <div class="sub">平台门店库实查，塘沽商圈</div>
+      <table>
+        <tr><th>店名</th><th style="width:42px;">评分</th><th style="width:44px;">评价</th><th style="width:40px;">人均</th><th style="width:56px;">状态</th></tr>
+        <tr><td>大胖烤串·吉林烧烤</td><td>4.4</td><td class="hi">1220</td><td>68</td><td>营业中</td></tr>
+        <tr><td>鑫锦州炭火烤串</td><td>3.9</td><td>20</td><td>54</td><td>营业中</td></tr>
+        <tr><td>塘老大·手工小串</td><td>3.9</td><td>39</td><td>—</td><td class="hi">倒闭</td></tr>
+        <tr><td>炉中火延边朝鲜族烤串</td><td>3.6</td><td>36</td><td>77</td><td class="hi">倒闭</td></tr>
+        <tr><td>老旧门特色烧烤串串香</td><td>3.9</td><td>30</td><td>59</td><td class="hi">倒闭</td></tr>
+        <tr><td>四个火夫自烤小串</td><td>3.6</td><td>14</td><td>110</td><td class="hi">倒闭</td></tr>
+        <tr><td>客串烧烤（怡信园店）</td><td>3.4</td><td>1</td><td>81</td><td class="hi">倒闭</td></tr>
+        <tr><td class="hi">金火花烤串</td><td>—</td><td>0</td><td>—</td><td>未开业</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>67 家烤串里，能看到名字的倒闭店至少 8 家。</b>而且不是差店才倒——4.4 分的烤肉胡同李（1789 条评价）倒了，4.8 分的锣大大（332 条）暂停营业。这说明一件事：</p>
+      <p class="lead" style="color:#C24312;font-weight:600;">
+        在塘沽，不是"做得好"就能活，是位置、价格、客群三条同时对，才能活。</p>
+    </div></div>
+
+    <div class="card"><div class="pad">
+      <h3>另一个信号：烤串的评分普遍很低</h3>
+      <p class="lead">烧烤类 778 家里，能排上号的评分大多在 3.4–4.1，评价数几十条。唯一像样的是大胖（4.4 / 1220 / 68）。</p>
+      <p class="lead"><b>评分低 = 体验不稳定 = 复购差。</b>这是新店最容易抢的位置：只要出品稳、服务不踩雷，4.5 分以上在这片区域就是头部。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">02</span><h2>死掉的都有一个共同点</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:88px;">死法</th><th>表现</th></tr>
+        <tr><td class="hi">低价拼杀</td><td>2元烧烤、美一天人均30、华哥火焰山人均21——全靠便宜拉人，毛利撑不住房租</td></tr>
+        <tr><td class="hi">小而全</td><td>夫妻店，20–40㎡，4–6桌，接不了聚会，只能做散客夜宵</td></tr>
+        <tr><td class="hi">场景没差异</td><td>都是"地摊烧烤""路边摊"，客人没有非来你家的理由</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>200㎡ 是金火花最大的一张牌，也是最大的成本压力。</b><br>
+        如果按小店的打法（拼低价、做散客），200㎡ 的房租会把你拖死；反过来，如果按"能装人"的思路做，200㎡ 就是塘沽稀缺的东西。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">03</span><h2>定位：塘沽能坐下来的烤串店</h2></div>
+    <div class="quote">
+      <div class="small">一 句 话 定 位</div>
+      <div class="big">10 个人也能坐一桌<br><em>吃烤串、喝酒、过生日</em></div>
+      <div class="note">塘沽的烤串店绝大多数是 4–6 桌的小店，接不了聚会。200㎡ 正好补这个空档。</div>
+    </div>
+    <div class="card"><div class="pad">
+      <h3>为什么这条能走通</h3>
+      <ul class="list">
+        <li><b>小店抢不走。</b>20–40㎡ 的店想接 10 人聚会，只能拼桌，体验极差</li>
+        <li><b>人均 55–60 正好卡住。</b>10 人一桌 550–600，聚餐最容易接受的价格带</li>
+        <li><b>场景能重复。</b>生日、团建、同事聚、朋友攒局——一年能来好几次，不像情侣约会那样一次性</li>
+        <li><b>200㎡ 的坪效靠翻台撑不住，靠"人均高 + 场次"才撑得住</b></li>
+      </ul>
+      <p class="lead" style="margin-top:12px;color:#A84E14;font-weight:600;">
+        不做"更好吃的烤串"，做"唯一能坐下一大桌的烤串店"。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">04</span><h2>客群：三拨人，三种来法</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:76px;">客群</th><th>什么时候来</th><th style="width:70px;">点法</th></tr>
+        <tr><td><b>同事聚会</b></td><td>周五晚、发薪日、项目收尾</td><td>10 人套餐 + 酒水</td></tr>
+        <tr><td><b>生日/朋友攒局</b></td><td>周末晚，提前 1–2 天订</td><td>大桌 + 蛋糕 + 拍照</td></tr>
+        <tr><td><b>周边居民</b></td><td>平日晚上、夜宵</td><td>2–4 人，点串 + 啤酒</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        三拨人的关系是：<b>聚会客贡献流水，居民客贡献日常，两者不能偏。</b><br>
+        开业期先抓聚会客（好传播、好拍照），稳定期靠居民客（保证每天有底）。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">05</span><h2>产品结构：串打底，菜撑场</h2></div>
+    <div class="card"><div class="pad">
+      <div class="sub">烤串店最容易犯的错：只有串，没有"桌上的大件"</div>
+      <table>
+        <tr><th style="width:76px;">层级</th><th style="width:46px;">占比</th><th>作用</th></tr>
+        <tr><td><b>烤串</b></td><td class="hi">55%</td><td>基本盘。牛羊肉串、掌中宝、烤蔬菜，出品要稳</td></tr>
+        <tr><td><b>桌上大件</b></td><td class="hi">25%</td><td>烤鱼 / 辣炒 / 铁锅 / 羊腿，供 6–10 人分食，撑场面和客单</td></tr>
+        <tr><td><b>凉菜小食</b></td><td>12%</td><td>上串前的空档先垫住，避免等串超 10 分钟就烦躁</td></tr>
+        <tr><td><b>酒水饮</b></td><td class="hi">8%</td><td>毛利最高的一块，见下条</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;color:#A84E14;font-weight:600;">
+        没有"桌上大件"，10 个人只能埋头撸串，吃得快、走得快、客单上不去。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">06</span><h2>价格：55–60 怎么站住</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:76px;">结构</th><th>金额</th><th>说明</th></tr>
+        <tr><td>串</td><td>人均 30–35</td><td>2–4 元/串，人均 10–15 串</td></tr>
+        <tr><td>桌上大件</td><td>人均 15–20</td><td>10 人分一份 158–198 的大件</td></tr>
+        <tr><td>凉菜饮</td><td>人均 10</td><td>凉菜 12–18，饮品 6–10</td></tr>
+        <tr><td class="hi">合计</td><td class="hi">55–65</td><td>不含酒水；含酒水可到 75–85</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>酒水是这家店真正的利润池。</b>啤酒毛利 60%+，一桌 10 人喝掉 10 瓶，就是 100–150 元毛利，抵得上三盘串。<br>
+        所以定价策略是：<b>串的价格贴着成本走，让人敢点；酒水和桌上大件赚钱。</b></p>
+      <p class="lead" style="color:#A84E14;font-weight:600;">
+        绝不做"2 元烧烤"那套。塘沽倒下的店，一半死在这条路上。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">07</span><h2>桌型：决定你能不能接聚会</h2></div>
+    <div class="card"><div class="pad">
+      <div class="sub">200㎡ 建议排法（按实际柱距调整）</div>
+      <table>
+        <tr><th style="width:72px;">桌型</th><th style="width:44px;">数量</th><th>作用</th></tr>
+        <tr><td><b>10–12 人大桌</b></td><td class="hi">3 张</td><td>接聚会、团建、生日，这是差异化的核心</td></tr>
+        <tr><td><b>6 人桌</b></td><td>4 张</td><td>小聚、家庭；可拼成 12 人</td></tr>
+        <tr><td><b>4 人桌</b></td><td>6 张</td><td>日常主力，占座位数最多</td></tr>
+        <tr><td><b>2 人桌</b></td><td>4 张</td><td>夜宵散客，灵活</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>要点：大桌靠里、小桌靠门。</b>聚会客待得久、声音大，放里面不打扰散客；散客进出快，靠门方便翻台。</p>
+      <p class="lead" style="color:#A84E14;font-weight:600;">
+        如果 200㎡ 里塞不下 3 张 10 人桌，这个定位就要重做。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">08</span><h2>渠道：四个平台各干一件事</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:56px;">平台</th><th>干什么</th><th style="width:56px;">优先级</th></tr>
+        <tr><td><b>点评</b></td><td>冲"塘沽烤串""塘沽聚会餐厅"两个词；评价从 0 做到 100 条</td><td class="hi">最高</td></tr>
+        <tr><td><b>美团</b></td><td>卖 4 人 / 6 人 / 10 人三档套餐，主打 10 人聚会餐</td><td class="hi">高</td></tr>
+        <tr><td><b>抖音</b></td><td>拍"10 个人在一桌撸串"的场面，不做低价券，做场景种草</td><td>中</td></tr>
+        <tr><td><b>私域</b></td><td>企业团建客户、生日预订，一家一家谈</td><td>中</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>点评是命门。</b>塘沽用户找烤串第一站就是点评，而这里 3.4–3.9 分是常态——你把分做到 4.5，自然就排在前面。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">09</span><h2>团购套餐：三档，不做一档通吃</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:70px;">套餐</th><th style="width:56px;">定价</th><th style="width:46px;">折扣</th><th>作用</th></tr>
+        <tr><td>2–3 人</td><td class="hi">98–118</td><td>8 折</td><td>日常散客，浅折扣保毛利</td></tr>
+        <tr><td>4–6 人</td><td class="hi">228–268</td><td>8.5 折</td><td>小聚主力，贡献主要流水</td></tr>
+        <tr><td><b>10 人聚会</b></td><td class="hi">528–588</td><td>8.5 折</td><td>差异化产品，别家没有</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>10 人套餐是这家店的招牌货。</b>它不需要打折打得狠，因为塘沽没有第二家能提供；它需要的是"看起来像一场聚会"——大桌、大件、餐具、拍照位。</p>
+      <p class="lead">参考巷子里/大胖的经验：小套餐深折做钩子，大套餐浅折保毛利。<b>金火花反过来，主力靠大套餐，所以大套餐的折扣不能低于 8.5 折。</b></p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">10</span><h2>开业 30 天节奏</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:70px;">阶段</th><th>动作</th></tr>
+        <tr><td>D-20～D-8</td><td>围挡上墙 + 建群；扫楼谈 3–5 家企业（团建意向）；菜单定稿、桌型定稿</td></tr>
+        <tr><td>D-7～D-1</td><td>点评开店 + 五连图 + 三档套餐上架；群里开放预订；试菜定出品</td></tr>
+        <tr><td><b>D1–D3</b></td><td><b>只接群内和预订客</b>，每天控量 15 桌以内，把出品和服务磨顺</td></tr>
+        <tr><td>D4–D7</td><td>放开散客；开始推"10 人聚会餐"；每桌请人拍照发点评</td></tr>
+        <tr><td>D8–D15</td><td>办 1–2 场企业品鉴（8–10 人一桌，请行政/HR）；点评评价数冲到 40 条</td></tr>
+        <tr><td>D16–D30</td><td>储值上线；冲"塘沽烤串"关键词排名；评价冲到 80–100 条</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;color:#A84E14;font-weight:600;">
+        200㎡ 的店，开业第一周千万别放量。挤爆一次、出品崩一次，后面的评价就救不回来了。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">11</span><h2>系统怎么用（智能版）</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:88px;">功能</th><th>用来干什么</th></tr>
+        <tr><td><b>扫码点餐</b></td><td>大桌必备。10 个人点单，服务员记不住，扫码最快</td></tr>
+        <tr><td><b>会员储值</b></td><td>充 300 送 50 / 充 500 送 100，锁聚会客的下一次</td></tr>
+        <tr><td><b>预订/订金</b></td><td>大桌收 50 元定金，防放鸽子，也提前知道备货量</td></tr>
+        <tr><td><b>成本卡</b></td><td>串的克重和损耗必须管住，否则人均 55 会做成亏本</td></tr>
+        <tr><td><b>支付后评价</b></td><td>付完款弹评价页，这是攒评价最快的方式</td></tr>
+        <tr><td><b>会员营销</b></td><td>开卡有礼、累计次数赠券、生日营销（聚会客的生日是金矿）</td></tr>
+      </table>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">12</span><h2>算账：一天要卖多少</h2></div>
+    <div class="calc">
+      <h3>200㎡ 的日固定成本（估算，需替换真实数）</h3>
+      <div class="row"><span>房租（按 25 万/年估）</span><b>约 690 元</b></div>
+      <div class="row"><span>人工（后厨 3 + 前厅 3）</span><b>约 1100 元</b></div>
+      <div class="row"><span>水电燃气</span><b>约 250 元</b></div>
+      <div class="row"><span>折旧摊销</span><b>约 250 元</b></div>
+      <div class="row"><span>日固定成本</span><b>约 2290 元</b></div>
+      <div class="row"><span>综合毛利按 58%（酒水拉高）</span><b>保本流水 3950 元/天</b></div>
+      <div class="row"><span>人均 58 元</span><b>每天约 68 人</b></div>
+      <div class="row"><span>折合桌数（2.5 人/桌）</span><b>约 27 桌/天</b></div>
+      <div class="note">
+        房租、人工、装修投入都是估算值，拿到真实数字后这条线会整体平移。<br>
+        70 人/天是保本线，不是目标线。做到 100 人、人均 65，一天流水 6500，毛利 3770，才真正赚钱。
+      </div>
+    </div>
+    <div class="card"><div class="pad">
+      <h3>三个不能破的线</h3>
+      <ul class="list">
+        <li><b>人均不能低于 50。</b>低于这条线，200㎡ 的房租人工根本覆盖不了</li>
+        <li><b>酒水占比要做到 15% 以上。</b>做不到说明客人只吃串不喝酒，客单永远上不去</li>
+        <li><b>大桌（8 人以上）每天至少 2 桌。</b>这是差异化定位的验证指标，做不到就是自嗨</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">13</span><h2>90 天节奏</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:66px;">阶段</th><th>目标</th><th>关键动作</th></tr>
+        <tr><td>0–30 天</td><td class="hi">活下来</td><td>出品稳定、评价 40 条、跑通大桌场景</td></tr>
+        <tr><td>31–60 天</td><td>站住脚</td><td>评分到 4.5、日均 80 人、储值开始有量</td></tr>
+        <tr><td>61–90 天</td><td>形成模型</td><td>大桌占比稳定、企业客户 3–5 家、复购率看得见</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>90 天最该盯的不是流水，是两个比例</b>：大桌（8 人以上）占比能不能到 25%，酒水占比能不能到 15%。<br>
+        这两个比例对了，模型就成立；不对，再忙也是白忙。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">14</span><h2>六个待确认，缺了方案要改</h2></div>
+    <div class="warn">
+      <h3>这几个数直接决定上面一半的结论</h3>
+      <ol>
+        <li><b>桌数、包间数、有没有二楼</b>——决定能不能排下 3 张 10 人桌</li>
+        <li><b>房租、装修投入、后厨前厅各几人</b>——保本线全靠这三个数</li>
+        <li><b>位置临不临街、离主路口多远</b>——决定围挡和引导怎么做</li>
+        <li><b>周边 1 公里有什么</b>——小区、学校、写字楼、菜市场，客群判断的基础</li>
+        <li><b>菜单定了没、有没有"桌上大件"</b>——没有的话，第 05 节要重做</li>
+        <li><b>能不能做夜宵（营业到几点）</b>——塘沽烤串有一半流水在 21 点后</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="foot">
+    金火花烤串 · 全案运营方案<br>
+    <b>竞对数据为塘沽商圈平台门店库实查，截至 2026 年 11 月</b><br>
+    成本与桌型为建议测算，以门店实际确认后为准
+  </div>
+
+</div>
+</body>
+</html>
